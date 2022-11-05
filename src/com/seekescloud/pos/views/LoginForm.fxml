@@ -14,7 +14,7 @@
    <children>
       <AnchorPane prefHeight="550.0" prefWidth="514.0" style="-fx-background-color: CCE4FF;">
          <children>
-            <AnchorPane layoutX="72.0" layoutY="44.0" prefHeight="463.0" prefWidth="442.0" style="-fx-background-color: F6F6F6; -fx-border-radius: 10;" styleClass="left-side" stylesheets="@../asserts/style/login.css">
+            <AnchorPane layoutX="72.0" layoutY="44.0" prefHeight="463.0" prefWidth="442.0" style="-fx-background-color: F6F6F6;" styleClass="left-side" stylesheets="@../asserts/style/login.css">
                <children>
                   <ImageView fitHeight="49.0" fitWidth="135.0" layoutX="138.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
                      <image>

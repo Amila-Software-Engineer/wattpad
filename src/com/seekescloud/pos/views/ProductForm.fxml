@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="1028.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.seekescloud.pos.controllers.CustomerFormController">
+   <children>
+      <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="15.0" prefHeight="37.0" prefWidth="131.0" ripplerFill="BLACK" style="-fx-background-color: #27AE60;" text="Back To Home" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="839.0" layoutY="15.0" prefHeight="37.0" prefWidth="175.0" ripplerFill="BLACK" style="-fx-background-color: #33485C;" text="+Add New Product" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <Separator layoutX="430.0" layoutY="34.0" prefHeight="3.0" prefWidth="390.0" />
+      <Label layoutX="198.0" layoutY="19.0" text="Product Management">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField labelFloat="true" layoutX="14.0" layoutY="83.0" prefHeight="25.0" prefWidth="205.0" promptText="Product Code" />
+      <JFXTextField labelFloat="true" layoutX="251.0" layoutY="83.0" prefHeight="25.0" prefWidth="251.0" promptText="Product Description" />
+      <JFXTextField labelFloat="true" layoutX="533.0" layoutY="83.0" prefHeight="25.0" prefWidth="221.0" promptText="Unit Price" />
+      <JFXTextField labelFloat="true" layoutX="793.0" layoutY="83.0" prefHeight="25.0" prefWidth="221.0" promptText="QTY On Hand" />
+      <JFXTextField layoutX="12.0" layoutY="129.0" promptText="Search" />
+      <ImageView fitHeight="68.0" fitWidth="28.0" layoutX="152.0" layoutY="128.0" opacity="0.9" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/sort.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="839.0" layoutY="128.0" prefHeight="37.0" prefWidth="175.0" ripplerFill="BLACK" style="-fx-background-color: #3498DB;" text="Save Product" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <TableView layoutX="14.0" layoutY="204.0" prefHeight="289.0" prefWidth="1001.0">
+         <columns>
+            <TableColumn prefWidth="130.66665649414062" text="Product ID" />
+            <TableColumn minWidth="0.333343505859375" prefWidth="267.3333435058594" text="Product Description" />
+            <TableColumn minWidth="0.0" prefWidth="181.6666259765625" text="Unit Price" />
+            <TableColumn minWidth="0.0" prefWidth="146.66668701171875" text="QTY On Hand" />
+            <TableColumn minWidth="0.0" prefWidth="113.33331298828125" text="QR" />
+            <TableColumn minWidth="0.0" prefWidth="156.6666259765625" text="Option" />
+         </columns>
+      </TableView>
+      <Label layoutX="14.0" layoutY="527.0" prefHeight="17.0" prefWidth="152.0" text="Seekers cloud" />
+      <Label alignment="CENTER_RIGHT" layoutX="863.0" layoutY="527.0" prefHeight="17.0" prefWidth="152.0" text="Version : 1.0.0" />
+      <Separator layoutX="123.0" layoutY="535.0" prefHeight="2.0" prefWidth="779.0" style="-fx-background-color: #7f8c8d;" />
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>
