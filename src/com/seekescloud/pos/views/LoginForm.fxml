@@ -1,14 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.seekescloud.pos.controllers.LoginFormController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="550.0" prefWidth="1028.0" stylesheets="@../asserts/style/login.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.seekescloud.pos.controllers.LoginFormController">
+   <children>
+      <AnchorPane prefHeight="550.0" prefWidth="514.0" style="-fx-background-color: CCE4FF;">
+         <children>
+            <AnchorPane layoutX="72.0" layoutY="44.0" prefHeight="463.0" prefWidth="442.0" style="-fx-background-color: F6F6F6; -fx-border-radius: 10;" styleClass="left-side" stylesheets="@../asserts/style/login.css">
+               <children>
+                  <ImageView fitHeight="49.0" fitWidth="135.0" layoutX="138.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asserts/logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="109.0" layoutY="66.0" text="Wecome Back">
+                     <font>
+                        <Font name="Webdings" size="31.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField labelFloat="true" layoutX="63.0" layoutY="163.0" prefHeight="31.0" prefWidth="286.0" promptText="User Name">
+                     <font>
+                        <Font size="13.0" />
+                     </font></JFXTextField>
+                  <JFXPasswordField layoutX="63.0" layoutY="211.0" prefHeight="25.0" prefWidth="286.0" promptText="Password">
+                     <font>
+                        <Font size="13.0" />
+                     </font></JFXPasswordField>
+                  <JFXButton layoutX="62.0" layoutY="262.0" prefHeight="25.0" prefWidth="286.0" style="-fx-background-color: #3498DB;" text="Login" textFill="WHITE">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="62.0" layoutY="335.0" prefHeight="25.0" prefWidth="286.0" style="-fx-background-color: #34495E;" text="Create an account" textFill="WHITE">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </JFXButton>
+                  <Separator layoutX="62.0" layoutY="309.0" prefHeight="20.0" prefWidth="110.0" />
+                  <Separator layoutX="238.0" layoutY="313.0" prefHeight="10.0" prefWidth="110.0" />
+                  <Label layoutX="191.0" layoutY="307.0" prefHeight="25.0" prefWidth="28.0" text="OR">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="514.0" prefHeight="550.0" prefWidth="514.0" style="-fx-background-color: #1E1F6F;">
+         <children>
+            <AnchorPane layoutY="44.0" prefHeight="463.0" prefWidth="442.0" style="-fx-background-color: E6F2FF;">
+               <children>
+                  <Label alignment="CENTER_RIGHT" layoutX="212.0" layoutY="14.0" prefHeight="25.0" prefWidth="204.0" text="New Update Is Available">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="411.0" fitWidth="432.0" layoutX="-82.0" layoutY="52.0" preserveRatio="true">
+                     <image>
+                        <Image url="@../asserts/login.png" />
+                     </image>
+                  </ImageView>
+                  <AnchorPane layoutX="33.0" layoutY="42.0" prefHeight="58.0" prefWidth="146.0" />
+                  <Label layoutX="215.0" layoutY="42.0" prefHeight="58.0" prefWidth="204.0" text="Lorem Ipsum is simply dumy text ever since the 1500s, when an unknown printer took a galley" textAlignment="JUSTIFY" wrapText="true" />
+                  <JFXButton buttonType="RAISED" layoutX="317.0" layoutY="118.0" prefHeight="25.0" prefWidth="97.0" ripplerFill="#175d88" style="-fx-border-color: #2980B9; -fx-border-width: 3; -fx-border-radius: 50%;" text="Update" textFill="#2980b9">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+   </children>
 </AnchorPane>
