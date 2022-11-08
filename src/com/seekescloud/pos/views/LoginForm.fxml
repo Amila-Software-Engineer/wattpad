@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="550.0" prefWidth="1028.0" stylesheets="@../asserts/style/login.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.seekescloud.pos.controllers.LoginFormController">
+<AnchorPane fx:id="loginFormContext" prefHeight="550.0" prefWidth="1028.0" stylesheets="@../asserts/style/login.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.seekescloud.pos.controllers.LoginFormController">
    <children>
       <AnchorPane prefHeight="550.0" prefWidth="514.0" style="-fx-background-color: CCE4FF;">
          <children>
@@ -39,7 +39,7 @@
                         <Font size="17.0" />
                      </font>
                   </JFXButton>
-                  <JFXButton layoutX="62.0" layoutY="335.0" prefHeight="25.0" prefWidth="286.0" style="-fx-background-color: #34495E;" text="Create an account" textFill="WHITE">
+                  <JFXButton layoutX="62.0" layoutY="335.0" onAction="#createAnAccountOnAction" prefHeight="25.0" prefWidth="286.0" style="-fx-background-color: #34495E;" text="Create an account" textFill="WHITE">
                      <font>
                         <Font size="17.0" />
                      </font>
