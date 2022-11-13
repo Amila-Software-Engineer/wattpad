@@ -12,10 +12,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="550.0" prefWidth="1028.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.seekescloud.pos.controllers.CustomerFormController">
+<AnchorPane fx:id="customerFormContext" prefHeight="550.0" prefWidth="1028.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.seekescloud.pos.controllers.CustomerFormController">
    <children>
-      <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="15.0" prefHeight="37.0" prefWidth="131.0" ripplerFill="BLACK" style="-fx-background-color: #27AE60;" text="Back To Home" textFill="WHITE">
+      <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="15.0" onAction="#backToHomeOnAction" prefHeight="37.0" prefWidth="131.0" ripplerFill="BLACK" style="-fx-background-color: #27AE60;" text="Back To Home" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>
@@ -31,11 +30,11 @@
             <Font name="System Bold" size="20.0" />
          </font>
       </Label>
-      <JFXTextField labelFloat="true" layoutX="14.0" layoutY="83.0" prefHeight="25.0" prefWidth="152.0" promptText="Customer ID" />
-      <JFXTextField labelFloat="true" layoutX="192.0" layoutY="83.0" prefHeight="25.0" prefWidth="221.0" promptText="Customer Name" />
-      <JFXTextField labelFloat="true" layoutX="445.0" layoutY="83.0" prefHeight="25.0" prefWidth="370.0" promptText="Customer Address" />
-      <JFXTextField labelFloat="true" layoutX="839.0" layoutY="83.0" prefHeight="25.0" prefWidth="175.0" promptText="Customer Salary" />
-      <JFXTextField layoutX="12.0" layoutY="129.0" promptText="Search" />
+      <JFXTextField fx:id="txtId" disable="true" labelFloat="true" layoutX="14.0" layoutY="83.0" prefHeight="25.0" prefWidth="152.0" promptText="Customer ID" />
+      <JFXTextField fx:id="txtname" labelFloat="true" layoutX="192.0" layoutY="83.0" prefHeight="25.0" prefWidth="221.0" promptText="Customer Name" />
+      <JFXTextField fx:id="txtAddress" labelFloat="true" layoutX="445.0" layoutY="83.0" prefHeight="25.0" prefWidth="370.0" promptText="Customer Address" />
+      <JFXTextField fx:id="txtSalary" labelFloat="true" layoutX="839.0" layoutY="83.0" prefHeight="25.0" prefWidth="175.0" promptText="Customer Salary" />
+      <JFXTextField fx:id="txtSearch" layoutX="12.0" layoutY="129.0" promptText="Search" />
       <ImageView fitHeight="68.0" fitWidth="28.0" layoutX="152.0" layoutY="128.0" opacity="0.9" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../asserts/sort.png" />
@@ -44,18 +43,18 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </ImageView>
-      <JFXButton buttonType="RAISED" layoutX="839.0" layoutY="128.0" prefHeight="37.0" prefWidth="175.0" ripplerFill="BLACK" style="-fx-background-color: #3498DB;" text="Save Customer" textFill="WHITE">
+      <JFXButton buttonType="RAISED" layoutX="839.0" layoutY="128.0" onAction="#saveUpdateOnAction" prefHeight="37.0" prefWidth="175.0" ripplerFill="BLACK" style="-fx-background-color: #3498DB;" text="Save Customer" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>
       </JFXButton>
-      <TableView layoutX="14.0" layoutY="204.0" prefHeight="289.0" prefWidth="1001.0">
+      <TableView fx:id="tblCustomer" layoutX="14.0" layoutY="204.0" prefHeight="289.0" prefWidth="1001.0">
         <columns>
-          <TableColumn prefWidth="149.66665649414062" text="Customer ID" />
-          <TableColumn minWidth="0.333343505859375" prefWidth="219.0" text="Customer  Name" />
-            <TableColumn minWidth="0.0" prefWidth="260.66668701171875" text="Customer Address" />
-            <TableColumn minWidth="0.0" prefWidth="200.33331298828125" text="Customer Salary" />
-            <TableColumn minWidth="0.0" prefWidth="170.6666259765625" text="Option" />
+          <TableColumn fx:id="colCustomerId" prefWidth="149.66665649414062" text="Customer ID" />
+          <TableColumn fx:id="colCustomerName" minWidth="0.333343505859375" prefWidth="219.0" text="Customer  Name" />
+            <TableColumn fx:id="colCustomerAddress" minWidth="0.0" prefWidth="260.66668701171875" text="Customer Address" />
+            <TableColumn fx:id="colCustomerSalary" minWidth="0.0" prefWidth="200.33331298828125" text="Customer Salary" />
+            <TableColumn fx:id="colCustomerOption" minWidth="0.0" prefWidth="170.6666259765625" text="Option" />
         </columns>
       </TableView>
       <Label layoutX="14.0" layoutY="527.0" prefHeight="17.0" prefWidth="152.0" text="Seekers cloud" />

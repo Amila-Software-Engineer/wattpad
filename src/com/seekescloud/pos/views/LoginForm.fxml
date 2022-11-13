@@ -26,15 +26,15 @@
                         <Font name="Webdings" size="31.0" />
                      </font>
                   </Label>
-                  <JFXTextField labelFloat="true" layoutX="63.0" layoutY="163.0" prefHeight="31.0" prefWidth="286.0" promptText="User Name">
+                  <JFXTextField fx:id="txtUsername" labelFloat="true" layoutX="63.0" layoutY="163.0" prefHeight="31.0" prefWidth="286.0" promptText="User Name">
                      <font>
                         <Font size="13.0" />
                      </font></JFXTextField>
-                  <JFXPasswordField layoutX="63.0" layoutY="211.0" prefHeight="25.0" prefWidth="286.0" promptText="Password">
+                  <JFXPasswordField fx:id="txtPassword" layoutX="63.0" layoutY="211.0" prefHeight="25.0" prefWidth="286.0" promptText="Password">
                      <font>
                         <Font size="13.0" />
                      </font></JFXPasswordField>
-                  <JFXButton layoutX="62.0" layoutY="262.0" prefHeight="25.0" prefWidth="286.0" style="-fx-background-color: #3498DB;" text="Login" textFill="WHITE">
+                  <JFXButton layoutX="62.0" layoutY="262.0" onAction="#loginOnAction" prefHeight="25.0" prefWidth="286.0" style="-fx-background-color: #3498DB;" text="Login" textFill="WHITE">
                      <font>
                         <Font size="17.0" />
                      </font>

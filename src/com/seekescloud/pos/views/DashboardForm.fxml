@@ -10,96 +10,138 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="550.0" prefWidth="1028.0" style="-fx-background-color: #ecf0f1;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.seekescloud.pos.controllers.DashboardFormController">
+<AnchorPane fx:id="dashboardFormContext" prefHeight="550.0" prefWidth="1028.0" style="-fx-background-color: #ecf0f1;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.seekescloud.pos.controllers.DashboardFormController">
    <children>
       <Label layoutX="14.0" layoutY="7.0" prefHeight="26.0" prefWidth="105.0" text="EasyPos">
          <font>
             <Font name="Lucida Bright Italic" size="27.0" />
          </font>
       </Label>
-      <Separator layoutX="134.0" layoutY="20.0" prefHeight="2.0" prefWidth="779.0" style="-fx-background-color: #7f8c8d;" />
+      <Separator layoutX="134.0" layoutY="20.0" prefHeight="2.0" prefWidth="200.0" style="-fx-background-color: #7f8c8d;" />
       <JFXButton layoutX="939.0" layoutY="5.0" style="-fx-background-color: #3395D7;" text="Log Out" textFill="#fbfbfb">
          <font>
             <Font size="15.0" />
          </font>
       </JFXButton>
-      <Circle fill="#b3b2baf0" layoutX="197.0" layoutY="177.0" radius="75.0" stroke="#606174" strokeType="OUTSIDE" strokeWidth="2.0">
+      <Circle fill="#b3b2baf0" layoutX="197.0" layoutY="177.0" onMouseClicked="#openCustomerManagementOnAction" radius="75.0" stroke="#606174" strokeType="OUTSIDE" strokeWidth="2.0">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Circle>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="101.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="101.0" layoutY="95.0" onMouseClicked="#openCustomerManagementOnAction" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../asserts/customer-dashboard.png" />
          </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </ImageView>
-      <Label layoutX="147.0" layoutY="261.0" text="Customer">
+      <Label layoutX="147.0" layoutY="261.0" onMouseClicked="#openCustomerManagementOnAction" text="Customer">
          <font>
             <Font name="System Bold" size="22.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </Label>
-      <Circle fill="#b3b2baf0" layoutX="524.0" layoutY="283.0" radius="75.0" stroke="#606174" strokeType="OUTSIDE" strokeWidth="2.0">
+      <Circle fill="#b3b2baf0" layoutX="524.0" layoutY="283.0" onMouseClicked="#openProductsOnAction" radius="75.0" stroke="#606174" strokeType="OUTSIDE" strokeWidth="2.0">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Circle>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="428.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="428.0" layoutY="201.0" onMouseClicked="#openProductsOnAction" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../asserts/produts-dashboard.png" />
          </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </ImageView>
-      <Label layoutX="474.0" layoutY="367.0" text="Products">
+      <Label layoutX="474.0" layoutY="367.0" onMouseClicked="#openProductsOnAction" text="Products">
          <font>
             <Font name="System Bold" size="22.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </Label>
-      <Circle fill="#b3b2baf0" layoutX="256.0" layoutY="397.0" radius="75.0" stroke="#606174" strokeType="OUTSIDE" strokeWidth="2.0">
+      <Circle fill="#b3b2baf0" layoutX="256.0" layoutY="397.0" onMouseClicked="#openoOrderDetailsOnAction" radius="75.0" stroke="#606174" strokeType="OUTSIDE" strokeWidth="2.0">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Circle>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="160.0" layoutY="315.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="160.0" layoutY="315.0" onMouseClicked="#openoOrderDetailsOnAction" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../asserts/order-details.png" />
          </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </ImageView>
-      <Label layoutX="188.0" layoutY="473.0" text="Order Details">
+      <Label layoutX="188.0" layoutY="473.0" onMouseClicked="#openoOrderDetailsOnAction" text="Order Details">
          <font>
             <Font name="System Bold" size="22.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </Label>
-      <Circle fill="#b3b2baf0" layoutX="848.0" layoutY="132.0" radius="75.0" stroke="#606174" strokeType="OUTSIDE" strokeWidth="2.0">
+      <Circle fill="#b3b2baf0" layoutX="848.0" layoutY="132.0" onMouseClicked="#openPlaceOrderOnAction" radius="75.0" stroke="#606174" strokeType="OUTSIDE" strokeWidth="2.0">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Circle>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="752.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="752.0" layoutY="50.0" onMouseClicked="#openPlaceOrderOnAction" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../asserts/place-orders.png" />
          </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </ImageView>
-      <Label layoutX="798.0" layoutY="216.0" text="Place order">
+      <Label layoutX="798.0" layoutY="216.0" onMouseClicked="#openPlaceOrderOnAction" text="Place order">
          <font>
             <Font name="System Bold" size="22.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </Label>
-      <Circle fill="#b3b2baf0" layoutX="899.0" layoutY="364.0" radius="75.0" stroke="#606174" strokeType="OUTSIDE" strokeWidth="2.0">
+      <Circle fill="#b3b2baf0" layoutX="899.0" layoutY="364.0" onMouseClicked="#openStatisticsOnAction" radius="75.0" stroke="#606174" strokeType="OUTSIDE" strokeWidth="2.0">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Circle>
-      <ImageView fitHeight="150.0" fitWidth="176.0" layoutX="791.0" layoutY="298.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="150.0" fitWidth="176.0" layoutX="791.0" layoutY="298.0" onMouseClicked="#openStatisticsOnAction" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../asserts/statistics-dashboard.png" />
          </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </ImageView>
-      <Label layoutX="849.0" layoutY="448.0" text="Statistics">
+      <Label layoutX="849.0" layoutY="448.0" onMouseClicked="#openStatisticsOnAction" text="Statistics">
          <font>
             <Font name="System Bold" size="22.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </Label>
       <Label layoutX="14.0" layoutY="526.0" prefHeight="17.0" prefWidth="152.0" text="Seekers cloud" />
       <Label alignment="CENTER_RIGHT" layoutX="863.0" layoutY="526.0" prefHeight="17.0" prefWidth="152.0" text="Version : 1.0.0" />
       <Separator layoutX="123.0" layoutY="534.0" prefHeight="2.0" prefWidth="779.0" style="-fx-background-color: #7f8c8d;" />
+      <Separator layoutX="709.0" layoutY="20.0" prefHeight="2.0" prefWidth="200.0" style="-fx-background-color: #7f8c8d;" />
+      <Label fx:id="lblDate" layoutX="365.0" layoutY="7.0">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" layoutX="551.0" layoutY="7.0" text="3495347954">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Separator layoutX="521.0" layoutY="12.0" maxWidth="1.0" orientation="VERTICAL" prefHeight="20.0" />
    </children>
 </AnchorPane>
