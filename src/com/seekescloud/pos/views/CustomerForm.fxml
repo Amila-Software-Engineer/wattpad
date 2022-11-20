@@ -19,7 +19,7 @@
             <Font size="16.0" />
          </font>
       </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="839.0" layoutY="15.0" prefHeight="37.0" prefWidth="175.0" ripplerFill="BLACK" style="-fx-background-color: #33485C;" text="+Add New Customer" textFill="WHITE">
+      <JFXButton buttonType="RAISED" layoutX="839.0" layoutY="15.0" onAction="#newCustomerOnAction" prefHeight="37.0" prefWidth="175.0" ripplerFill="BLACK" style="-fx-background-color: #33485C;" text="+Add New Customer" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>
@@ -43,7 +43,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </ImageView>
-      <JFXButton buttonType="RAISED" layoutX="839.0" layoutY="128.0" onAction="#saveUpdateOnAction" prefHeight="37.0" prefWidth="175.0" ripplerFill="BLACK" style="-fx-background-color: #3498DB;" text="Save Customer" textFill="WHITE">
+      <JFXButton fx:id="btnSaveUpdate" buttonType="RAISED" layoutX="839.0" layoutY="128.0" onAction="#saveUpdateOnAction" prefHeight="37.0" prefWidth="175.0" ripplerFill="BLACK" style="-fx-background-color: #3498DB;" text="Save Customer" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>

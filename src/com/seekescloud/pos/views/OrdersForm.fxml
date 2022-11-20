@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Separator?>
@@ -9,9 +10,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="550.0" prefWidth="1028.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.seekescloud.pos.controllers.CustomerFormController">
+<AnchorPane fx:id="orderContext" prefHeight="550.0" prefWidth="1028.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.seekescloud.pos.controllers.OrdersFormController">
    <children>
-      <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="15.0" prefHeight="37.0" prefWidth="131.0" ripplerFill="BLACK" style="-fx-background-color: #27AE60;" text="Back To Home" textFill="WHITE">
+      <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="15.0" onAction="#backToHomeOnAction" prefHeight="37.0" prefWidth="131.0" ripplerFill="BLACK" style="-fx-background-color: #27AE60;" text="Back To Home" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>
@@ -22,28 +23,20 @@
             <Font name="System Bold" size="20.0" />
          </font>
       </Label>
-      <TableView layoutX="14.0" layoutY="111.0" prefHeight="289.0" prefWidth="587.0">
+      <TableView fx:id="tblOrders" layoutX="34.0" layoutY="166.0" prefHeight="289.0" prefWidth="838.0">
          <columns>
-            <TableColumn prefWidth="130.66665649414062" text="Order ID" />
-            <TableColumn minWidth="0.333343505859375" prefWidth="146.66668701171875" text="Date" />
-            <TableColumn minWidth="0.0" prefWidth="160.0" text="Cost" />
-            <TableColumn minWidth="0.0" prefWidth="147.66668701171875" text="Customer ID" />
+            <TableColumn fx:id="colOrderId" prefWidth="121.66665649414062" text="Order ID" />
+            <TableColumn fx:id="colDate" minWidth="0.333343505859375" prefWidth="177.3333740234375" text="Date" />
+            <TableColumn fx:id="colTotal" minWidth="0.0" prefWidth="138.0" text="Cost" />
+            <TableColumn fx:id="colCustomerId" minWidth="0.0" prefWidth="166.0" text="Customer ID" />
+            <TableColumn fx:id="colOption" minWidth="0.0" prefWidth="166.0" text="Option" />
          </columns>
       </TableView>
       <Label layoutX="14.0" layoutY="527.0" prefHeight="17.0" prefWidth="152.0" text="Seekers cloud" />
       <Label alignment="CENTER_RIGHT" layoutX="863.0" layoutY="527.0" prefHeight="17.0" prefWidth="152.0" text="Version : 1.0.0" />
       <Separator layoutX="123.0" layoutY="535.0" prefHeight="2.0" prefWidth="779.0" style="-fx-background-color: #7f8c8d;" />
-      <Label layoutX="14.0" layoutY="74.0" prefHeight="25.0" prefWidth="97.0" text="2022-10-20">
-         <font>
-            <Font size="16.0" />
-         </font>
-      </Label>
-      <Separator layoutX="107.0" layoutY="86.0" prefHeight="3.0" prefWidth="26.0" style="-fx-background-color: #2c3e50;" />
-      <Label layoutX="151.0" layoutY="74.0" prefHeight="25.0" prefWidth="97.0" text="2022-10-20">
-         <font>
-            <Font size="16.0" />
-         </font>
-      </Label>
+      <JFXDatePicker defaultColor="#07078c" layoutX="103.0" layoutY="104.0" promptText="From" />
+      <JFXDatePicker defaultColor="#07078c" layoutX="311.0" layoutY="104.0" promptText="To" />
    </children>
    <cursor>
       <Cursor fx:constant="DEFAULT" />

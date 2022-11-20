@@ -3,7 +3,7 @@ package com.seekescloud.pos.views.tm;
 
 import javafx.scene.control.Button;
 
-public class CustomerTm {
+public class CustomerTM {
     private String id;
     private String name;
     private String address;
@@ -51,10 +51,10 @@ public class CustomerTm {
         this.btn = btn;
     }
 
-    public CustomerTm() {
+    public CustomerTM() {
     }
 
-    public CustomerTm(String id, String name, String address, double salary, Button btn) {
+    public CustomerTM(String id, String name, String address, double salary, Button btn) {
         this.id = id;
         this.name = name;
         this.address = address;
